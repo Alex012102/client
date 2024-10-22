@@ -1,0 +1,7 @@
+#hero {
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    rgba(var(--bs-primary-rgb), 0.17)
+  );
+}

@@ -1,0 +1,29 @@
+/* Webkit-based browsers (Chrome, Safari, Edge) */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+/* Remove scrollbar arrows (buttons) */
+.overflow-y-auto::-webkit-scrollbar-button {
+  display: none; /* Hides the arrow buttons */
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparent scrollbar track */
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Initially hide the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+  transition: background-color 0.6s ease; /* Smooth transition for hover effect */
+}
+
+/* When the entire div is hovered */
+.overflow-y-auto:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(128, 128, 128, 0.4); /* Thumb color on div hover */
+}
+
+/* Scrollbar thumb hover effect when hovering over the scrollbar */
+.overflow-y-auto:hover::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(60, 60, 60, 0.7); /* Darker color on thumb hover */
+}

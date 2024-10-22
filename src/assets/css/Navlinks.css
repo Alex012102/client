@@ -1,0 +1,38 @@
+/* Default nav-link styles */
+.nav-link {
+  color: black;
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for color and scale effect */
+  display: flex;
+  align-items: center;
+}
+
+/* Hover state: icon and label enlarge and change to the Bootstrap 'info' color */
+.nav-link:hover {
+  color: var(--bs-info); /* Bootstrap info color on hover */
+  transform: scale(1.1); /* Slightly enlarge both the icon and label */
+}
+
+/* Active state: icon and label bold, change to the Bootstrap 'primary' color */
+.nav-link.active {
+  color: var(--bs-primary); /* Bootstrap primary color when active */
+  font-weight: bold; /* Make text bold when active */
+}
+
+/* Ensure the icon follows the same hover and active behavior as the label */
+.nav-link svg {
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for icon color and size */
+}
+
+/* Enlarge and change icon color on hover */
+.nav-link:hover svg {
+  color: var(--bs-info);
+  transform: scale(1.1); /* Enlarge the icon */
+}
+
+/* Active state for the icon */
+.nav-link.active svg {
+  color: var(
+    --bs-primary
+  ); /* Bootstrap primary color for the icon when active */
+  font-weight: bold;
+}
