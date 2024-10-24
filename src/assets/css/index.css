@@ -1,3 +1,35 @@
 .dashboard-background {
-  background-color: rgba(245, 245, 245, 0.4);
+  background-color: rgba(153, 153, 153, 0.12);
+}
+
+.card-body {
+  padding: 0.68rem 1rem;
+}
+
+.fs-7 {
+  font-size: 0.9rem;
+}
+
+.circle-placeholder {
+  height: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+}
+
+.card-hover:hover {
+  transform: scale(1.04); /* Slightly increase size on hover */
+}
+
+#properties .card {
+  height: 100%;
+}
+
+.metrics {
+  color: #ffffff;
+  background-color: #408aaa;
+}
+
+.vendor-list-item small {
+  color: rgb(var(--bs-primary-rgb)) !important;
 }

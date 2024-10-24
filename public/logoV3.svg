@@ -1,0 +1,14 @@
+<svg>
+        <path
+          d="M10,100 L70,50 L130,100"
+          stroke="#39a9db"
+          stroke-width="8"
+          fill="none"
+        />
+        <path
+          d="M40,90 L60,110 L100,70"
+          stroke="#ff7433"
+          stroke-width="8"
+          fill="none"
+        />
+      </svg>

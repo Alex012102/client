@@ -7,6 +7,7 @@ import PricingLandingPage from "./PricingLandingPage.jsx";
 const LandingPage = () => {
   return (
     <div>
+      
       <LandingPageHeader />
       <HeroLandingPage />
       <FeaturesLandingPage />

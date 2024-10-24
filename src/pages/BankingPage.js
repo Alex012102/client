@@ -20,6 +20,7 @@ const BankingPage = () => {
         cards={cardsData}
       />
       {/* Rest of the page content */}
+      <div className="flex-grow-1 d-flex" style={{ overflow: "hidden" }}></div>
     </>
   );
 };

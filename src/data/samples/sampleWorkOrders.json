@@ -1,0 +1,302 @@
+[
+  {
+    "title": "Lawn Mowing",
+    "description": "Monthly lawn mowing service needed.",
+    "address": "123 Green St.",
+    "urgency": "Medium",
+    "category": "Lawn Care",
+    "status": "Completed",
+    "date_submitted": "2024-09-01",
+    "request_id": "REQ001"
+  },
+  {
+    "title": "Leaky Faucet Repair",
+    "description": "Fix the leaky faucet in the kitchen.",
+    "address": "456 Maple Ave.",
+    "urgency": "High",
+    "category": "Plumbing",
+    "status": "In Progress",
+    "date_submitted": "2024-09-10",
+    "request_id": "REQ002"
+  },
+  {
+    "title": "Carpet Cleaning",
+    "description": "Deep cleaning for the living room carpet.",
+    "address": "789 Oak Dr.",
+    "urgency": "Low",
+    "category": "Cleaning",
+    "status": "Completed",
+    "date_submitted": "2024-09-15",
+    "request_id": "REQ003"
+  },
+  {
+    "title": "Electrical Wiring Check",
+    "description": "Inspect wiring in the garage for safety.",
+    "address": "321 Birch Blvd.",
+    "urgency": "Medium",
+    "category": "Electrical",
+    "status": "Waiting",
+    "date_submitted": "2024-09-20",
+    "request_id": "REQ004"
+  },
+  {
+    "title": "Replace Light Fixtures",
+    "description": "Replace old light fixtures in the dining room.",
+    "address": "654 Pine St.",
+    "urgency": "Medium",
+    "category": "Electrical",
+    "status": "Completed",
+    "date_submitted": "2024-09-22",
+    "request_id": "REQ005"
+  },
+  {
+    "title": "Roof Leak Repair",
+    "description": "Repair the leak in the roof before winter.",
+    "address": "987 Cedar Ct.",
+    "urgency": "High",
+    "category": "Repair",
+    "status": "New",
+    "date_submitted": "2024-10-01",
+    "request_id": "REQ006"
+  },
+  {
+    "title": "Bathroom Remodeling",
+    "description": "Complete remodeling of the master bathroom.",
+    "address": "111 Walnut St.",
+    "urgency": "Medium",
+    "category": "Capital Expenditure",
+    "status": "Completed",
+    "date_submitted": "2024-09-05",
+    "request_id": "REQ007"
+  },
+  {
+    "title": "Window Cleaning",
+    "description": "Clean all windows inside and out.",
+    "address": "222 Elm St.",
+    "urgency": "Low",
+    "category": "Cleaning",
+    "status": "Completed",
+    "date_submitted": "2024-09-11",
+    "request_id": "REQ008"
+  },
+  {
+    "title": "Air Conditioning Service",
+    "description": "Service the air conditioning unit for summer.",
+    "address": "333 Spruce St.",
+    "urgency": "Medium",
+    "category": "Repair",
+    "status": "In Progress",
+    "date_submitted": "2024-09-12",
+    "request_id": "REQ009"
+  },
+  {
+    "title": "Gutter Cleaning",
+    "description": "Clean out the gutters before winter.",
+    "address": "444 Cherry Ln.",
+    "urgency": "Medium",
+    "category": "Cleaning",
+    "status": "Pending",
+    "date_submitted": "2024-09-18",
+    "request_id": "REQ010"
+  },
+  {
+    "title": "Faucet Installation",
+    "description": "Install a new kitchen faucet.",
+    "address": "555 Aspen Ave.",
+    "urgency": "High",
+    "category": "Plumbing",
+    "status": "Completed",
+    "date_submitted": "2024-09-02",
+    "request_id": "REQ011"
+  },
+  {
+    "title": "Light Switch Replacement",
+    "description": "Replace the faulty light switch in the living room.",
+    "address": "666 Fir Rd.",
+    "urgency": "Medium",
+    "category": "Electrical",
+    "status": "Waiting",
+    "date_submitted": "2024-09-07",
+    "request_id": "REQ012"
+  },
+  {
+    "title": "Pest Control Service",
+    "description": "Monthly pest control service needed.",
+    "address": "777 Sycamore St.",
+    "urgency": "Medium",
+    "category": "Repair",
+    "status": "Completed",
+    "date_submitted": "2024-09-09",
+    "request_id": "REQ013"
+  },
+  {
+    "title": "Fence Repair",
+    "description": "Repair the damaged fence in the backyard.",
+    "address": "888 Spruce St.",
+    "urgency": "High",
+    "category": "Repair",
+    "status": "In Progress",
+    "date_submitted": "2024-09-14",
+    "request_id": "REQ014"
+  },
+  {
+    "title": "Deck Cleaning",
+    "description": "Pressure wash the wooden deck.",
+    "address": "999 Birch Blvd.",
+    "urgency": "Low",
+    "category": "Cleaning",
+    "status": "Completed",
+    "date_submitted": "2024-09-21",
+    "request_id": "REQ015"
+  },
+  {
+    "title": "HVAC System Check",
+    "description": "Annual checkup of the HVAC system.",
+    "address": "1010 Cedar St.",
+    "urgency": "Medium",
+    "category": "Repair",
+    "status": "Completed",
+    "date_submitted": "2024-09-16",
+    "request_id": "REQ016"
+  },
+  {
+    "title": "Garden Cleanup",
+    "description": "Fall cleanup for the garden area.",
+    "address": "1111 Oak St.",
+    "urgency": "Low",
+    "category": "Lawn Care",
+    "status": "Pending",
+    "date_submitted": "2024-09-23",
+    "request_id": "REQ017"
+  },
+  {
+    "title": "Sewer Line Inspection",
+    "description": "Inspect the sewer line for potential issues.",
+    "address": "1212 Maple Ave.",
+    "urgency": "High",
+    "category": "Plumbing",
+    "status": "New",
+    "date_submitted": "2024-10-02",
+    "request_id": "REQ018"
+  },
+  {
+    "title": "Drywall Repair",
+    "description": "Repair the damaged drywall in the living room.",
+    "address": "1313 Elm St.",
+    "urgency": "Medium",
+    "category": "Repair",
+    "status": "Waiting",
+    "date_submitted": "2024-09-08",
+    "request_id": "REQ019"
+  },
+  {
+    "title": "Smoke Detector Installation",
+    "description": "Install smoke detectors in all bedrooms.",
+    "address": "1414 Cherry Ln.",
+    "urgency": "Medium",
+    "category": "Repair",
+    "status": "In Progress",
+    "date_submitted": "2024-09-19",
+    "request_id": "REQ020"
+  },
+  {
+    "title": "New Roof Installation",
+    "description": "Install a new roof before winter.",
+    "address": "1515 Pine Rd.",
+    "urgency": "High",
+    "category": "Capital Expenditure",
+    "status": "Completed",
+    "date_submitted": "2024-09-03",
+    "request_id": "REQ021"
+  },
+  {
+    "title": "Appliance Repair",
+    "description": "Fix the broken refrigerator.",
+    "address": "1616 Spruce St.",
+    "urgency": "High",
+    "category": "Repair",
+    "status": "Completed",
+    "date_submitted": "2024-09-04",
+    "request_id": "REQ022"
+  },
+  {
+    "title": "Window Installation",
+    "description": "Install new energy-efficient windows.",
+    "address": "1717 Maple Ave.",
+    "urgency": "Medium",
+    "category": "Capital Expenditure",
+    "status": "Completed",
+    "date_submitted": "2024-09-17",
+    "request_id": "REQ023"
+  },
+  {
+    "title": "Siding Replacement",
+    "description": "Replace damaged siding on the house.",
+    "address": "1818 Birch Blvd.",
+    "urgency": "Medium",
+    "category": "Capital Expenditure",
+    "status": "In Progress",
+    "date_submitted": "2024-09-13",
+    "request_id": "REQ024"
+  },
+  {
+    "title": "Drain Cleaning",
+    "description": "Clear clogged drains in the bathroom.",
+    "address": "1919 Cedar Ct.",
+    "urgency": "High",
+    "category": "Plumbing",
+    "status": "New",
+    "date_submitted": "2024-10-03",
+    "request_id": "REQ025"
+  },
+  {
+    "title": "Pressure Washing",
+    "description": "Pressure wash the entire exterior.",
+    "address": "2020 Oak St.",
+    "urgency": "Medium",
+    "category": "Cleaning",
+    "status": "Pending",
+    "date_submitted": "2024-09-25",
+    "request_id": "REQ026"
+  },
+  {
+    "title": "Foundation Inspection",
+    "description": "Inspect the foundation for any cracks.",
+    "address": "2121 Pine Rd.",
+    "urgency": "High",
+    "category": "Repair",
+    "status": "Completed",
+    "date_submitted": "2024-09-26",
+    "request_id": "REQ027"
+  },
+  {
+    "title": "Lawn Aeration",
+    "description": "Aerate the lawn for better growth.",
+    "address": "2222 Cedar Ave.",
+    "urgency": "Medium",
+    "category": "Lawn Care",
+    "status": "Completed",
+    "date_submitted": "2024-09-28",
+    "request_id": "REQ028"
+  },
+  {
+    "title": "Heating System Check",
+    "description": "Annual checkup of the heating system.",
+    "address": "2323 Spruce St.",
+    "urgency": "Medium",
+    "category": "Repair",
+    "status": "Completed",
+    "date_submitted": "2024-09-29",
+    "request_id": "REQ029"
+  },
+  {
+    "title": "Paving Driveway",
+    "description": "Resurface the driveway with new asphalt.",
+    "address": "2424 Maple Ave.",
+    "urgency": "High",
+    "category": "Capital Expenditure",
+    "status": "In Progress",
+    "date_submitted": "2024-09-30",
+    "request_id": "REQ030"
+  }
+]

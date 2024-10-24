@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Property Inspection",
+    "description": "Routine inspection of property at 789 Pine Rd.",
+    "date": "2024-10-26"
+  },
+  {
+    "title": "Tenant Move-In",
+    "description": "New tenants moving into 456 Oak St. Unit 2A.",
+    "date": "2024-11-01"
+  },
+  {
+    "title": "Lease Renewal Meeting",
+    "description": "Discuss lease renewal with tenants at 123 Maple St.",
+    "date": "2024-11-05"
+  },
+  {
+    "title": "Vendor Maintenance",
+    "description": "Plumbing repair scheduled at 890 Cedar Ave.",
+    "date": "2024-11-10"
+  },
+  {
+    "title": "Rent Collection Deadline",
+    "description": "Final day for rent collection for all properties.",
+    "date": "2024-11-15"
+  },
+  {
+    "title": "Tenant Move-Out",
+    "description": "Current tenants moving out of 321 Birch St. Unit 4B.",
+    "date": "2024-12-01"
+  },
+  {
+    "title": "Annual Property Review",
+    "description": "Review and assess maintenance needs for 123 Maple St.",
+    "date": "2024-12-15"
+  },
+  {
+    "title": "Vendor Payment Due",
+    "description": "Payment due to electrician for repairs at 456 Oak St.",
+    "date": "2024-12-20"
+  },
+  {
+    "title": "Holiday Decorations Removal",
+    "description": "Remove holiday decorations from 890 Cedar Ave.",
+    "date": "2025-01-02"
+  },
+  {
+    "title": "New Lease Signing",
+    "description": "Sign lease with new tenants for 789 Pine Rd.",
+    "date": "2025-01-05"
+  }
+]

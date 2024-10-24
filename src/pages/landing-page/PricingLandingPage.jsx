@@ -6,7 +6,7 @@ const PricingLandingPage = () => {
   return (
     <div className="container py-5 mt-2" id="pricing">
       <h2 className="pb-2 border-bottom">Pricing</h2>
-      <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div className="row row-cols-1 row-cols-md-3 mb-3 text-center p-3 mx-5">
         <PriceCard
           label="Free"
           price="0"

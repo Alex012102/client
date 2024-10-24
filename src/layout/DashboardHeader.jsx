@@ -1,6 +1,7 @@
 import React from "react";
 import NavLinks from "../components/NavLinks";
-import ButtonGroup from "../components/ui/ButtonGroup";
+import Button from "../components/ui/Button.jsx";
+import { GearFill } from "react-bootstrap-icons";
 
 const DashboardHeader = () => {
   return (
@@ -27,7 +28,6 @@ const DashboardHeader = () => {
           </a>
           <div className="collapse navbar-collapse justify-content-center">
             {" "}
-            {/* Center the nav */}
             <NavLinks
               className="text-center"
               navLinks={[
@@ -63,18 +63,10 @@ const DashboardHeader = () => {
                 },
               ]}
             />{" "}
-            {/* Pass className to NavLinks */}
           </div>
-          <ButtonGroup
-            buttons={[
-              {
-                label: "Login",
-                style: "primary",
-                className: "ms-2 text-white",
-              },
-              { label: "Signup", style: "info", className: "ms-2 text-white" },
-            ]}
-          />
+          <Button style={"info"} className={"d-flex align-items-center justify-content-center p-2"}>
+            <GearFill color="white" />
+          </Button>
         </div>
       </nav>
     </header>

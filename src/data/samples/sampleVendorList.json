@@ -1,0 +1,152 @@
+[
+  {
+    "name": "ABC Plumbing Co.",
+    "contactName": "John Doe",
+    "phone": "(555) 123-4567",
+    "email": "contact@abcplumbing.com",
+    "website": "https://www.abcplumbing.com",
+    "primaryService": "Plumbing",
+    "invoicePayable": true,
+    "address": {
+      "streetAddress": "123 Water St.",
+      "city": "Springfield",
+      "state": "IL",
+      "zipCode": "62701"
+    }
+  },
+  {
+    "name": "Electric Experts",
+    "contactName": "Jane Smith",
+    "phone": "(555) 234-5678",
+    "email": "support@electricexperts.com",
+    "website": "https://www.electricexperts.com",
+    "primaryService": "Electrical",
+    "invoicePayable": false,
+    "address": {
+      "streetAddress": "456 Power Ave.",
+      "city": "Chicago",
+      "state": "IL",
+      "zipCode": "60616"
+    }
+  },
+  {
+    "name": "Clean Sweep Services",
+    "contactName": "Mark Johnson",
+    "phone": "(555) 345-6789",
+    "email": "info@cleansweep.com",
+    "website": "https://www.cleansweep.com",
+    "primaryService": "Cleaning",
+    "invoicePayable": true,
+    "address": {
+      "streetAddress": "789 Clean Way",
+      "city": "Naperville",
+      "state": "IL",
+      "zipCode": "60540"
+    }
+  },
+  {
+    "name": "Green Lawn Landscaping",
+    "contactName": "Lisa Green",
+    "phone": "(555) 456-7890",
+    "email": "sales@greenlawn.com",
+    "website": "https://www.greenlawnlandscaping.com",
+    "primaryService": "Landscaping",
+    "invoicePayable": false,
+    "address": {
+      "streetAddress": "101 Garden St.",
+      "city": "Peoria",
+      "state": "IL",
+      "zipCode": "61602"
+    }
+  },
+  {
+    "name": "Fix-It Handyman Services",
+    "contactName": "Tom Wilson",
+    "phone": "(555) 567-8901",
+    "email": "bookings@fixithandyman.com",
+    "website": "https://www.fixithandyman.com",
+    "primaryService": "General Repairs",
+    "invoicePayable": true,
+    "address": {
+      "streetAddress": "202 Fixer Upper Ln.",
+      "city": "Rockford",
+      "state": "IL",
+      "zipCode": "61101"
+    }
+  },
+  {
+    "name": "Sunny Window Cleaning",
+    "contactName": "Emily Bright",
+    "phone": "(555) 678-9012",
+    "email": "service@sunnywindowcleaning.com",
+    "website": "https://www.sunnywindowcleaning.com",
+    "primaryService": "Window Cleaning",
+    "invoicePayable": true,
+    "address": {
+      "streetAddress": "303 Shiny Ave.",
+      "city": "Joliet",
+      "state": "IL",
+      "zipCode": "60432"
+    }
+  },
+  {
+    "name": "SafeHome Security Systems",
+    "contactName": "Michael Knight",
+    "phone": "(555) 789-0123",
+    "email": "support@safehomesecurity.com",
+    "website": "https://www.safehomesecurity.com",
+    "primaryService": "Security",
+    "invoicePayable": false,
+    "address": {
+      "streetAddress": "404 Secure St.",
+      "city": "Aurora",
+      "state": "IL",
+      "zipCode": "60505"
+    }
+  },
+  {
+    "name": "Quick HVAC Solutions",
+    "contactName": "Rachel Heat",
+    "phone": "(555) 890-1234",
+    "email": "contact@quickhvac.com",
+    "website": "https://www.quickhvac.com",
+    "primaryService": "HVAC",
+    "invoicePayable": true,
+    "address": {
+      "streetAddress": "505 Cool Rd.",
+      "city": "Springfield",
+      "state": "IL",
+      "zipCode": "62704"
+    }
+  },
+  {
+    "name": "Top Coat Painters",
+    "contactName": "Derek White",
+    "phone": "(555) 901-2345",
+    "email": "inquiries@topcoatpainters.com",
+    "website": "https://www.topcoatpainters.com",
+    "primaryService": "Painting",
+    "invoicePayable": false,
+    "address": {
+      "streetAddress": "606 Brush Ln.",
+      "city": "Bloomington",
+      "state": "IL",
+      "zipCode": "61701"
+    }
+  },
+  {
+    "name": "A-1 Pest Control",
+    "contactName": "Natalie Buggs",
+    "phone": "(555) 012-3456",
+    "email": "service@a1pestcontrol.com",
+    "website": "https://www.a1pestcontrol.com",
+    "primaryService": "Pest Control",
+    "invoicePayable": true,
+    "address": {
+      "streetAddress": "707 Bug Dr.",
+      "city": "Champaign",
+      "state": "IL",
+      "zipCode": "61820"
+    }
+  }
+]

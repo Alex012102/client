@@ -1,16 +1,23 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import CardTitle from "./ui/CardTitle";
 
-const Card = ({ style, title, titleAlign, text, children }) => {
-  return (
-    <div className={`${style} card shadow border-0`}>
-      <div className="card-body">
-        {title && <CardTitle title={title} titleAlign={titleAlign} />}
-        {text && <p className="card-text">{text}</p>}
-        {children && { children }}
+const Card = forwardRef(
+  ({ className = "", title, titleAlign, text, children, id }, ref) => {
+    return (
+      <div
+        ref={ref}
+        className={`${className} card flex-grow-1 border-0 shadow`}
+        id={id}
+      >
+        <div className="card-body">
+          {title && <CardTitle title={title} titleAlign={titleAlign} />}
+          {text && <p className="card-text">{text}</p>}
+
+          {children}
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+);
 
 export default Card;

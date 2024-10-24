@@ -1,14 +1,20 @@
 import React from "react";
 import Banner from "../layout/Banner.jsx";
+import Calendar from "../features/Calendar.jsx";
+import ServiceRequestWidget from "../features/ServiceRequestWidget.jsx";
+import MessagesWidget from "../features/MessagesWidget.jsx";
+import ExpensesWidget from "../features/ExpensesWidget.jsx";
+import VendorsWidget from "../features/VendorsWidget.jsx";
+import PaymentsWidget from "../features/PaymentsWidget.jsx";
 
 const OverviewPage = () => {
   const pageTitle = "Account Dashboard";
   const pageSubtitle = "Your account overview";
   const cardsData = [
-    { title: "Metric Title", text: "X,XXX" },
-    { title: "Metric Title", text: "X,XXX" },
-    { title: "Metric Title", text: "X,XXX" },
-    { title: "Metric Title", text: "X,XXX" },
+    { title: "Account Balance", text: "$15,948" },
+    { title: "Expected Rent", text: "$10,850" },
+    { title: "Ledger Total", text: "-$3,494" },
+    { title: "Unit Total", text: "9" },
   ];
 
   return (
@@ -19,7 +25,32 @@ const OverviewPage = () => {
         subtitle={pageSubtitle}
         cards={cardsData}
       />
-      {/* Rest of the page content */}
+      <div className="container-fluid">
+        {/* Rest of the page content */}
+        <div className="flex-grow-1 d-flex py-4">
+          {/* Left Section */}
+          <div
+            className="col-md-4 d-flex flex-column gap-3"
+          >
+            <Calendar />
+            <ServiceRequestWidget />
+            <MessagesWidget />
+          </div>
+          {/* Right Section */}
+          <div className="col-md-8 d-flex flex-column ps-md-3">
+            {/* Upper Section */}
+            <div className="d-flex flex-wrap mb-3" style={{ height: "50%" }}>
+              <ExpensesWidget />
+            </div>
+            {/* Lower Section */}
+            <div className="d-flex flex-wrap gap-3">
+              <VendorsWidget />
+              <PaymentsWidget />
+              
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

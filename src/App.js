@@ -10,7 +10,6 @@ import { useEffect } from "react";
 
 // styles
 import "./assets/css/custom-bootstrap.min.css";
-// import "./assets/css/index.css";
 import "./assets/css/scrollbar.css";
 import "./assets/css/Navlinks.css";
 import "./assets/css/LandingPage.css";
@@ -47,7 +46,15 @@ const App = () => {
     <div>
       {/* Page Content */}
       {location.pathname !== "/" && ( // Check if the current path is not the landing page
-        <div className="container-fluid" id="dashboard">
+        <div
+          className="container-fluid"
+          id="dashboard"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            maxHeight: "100vh",
+          }}
+        >
           <DashboardHeader />
           <Routes>
             <Route path="/overview" element={<OverviewPage />} />

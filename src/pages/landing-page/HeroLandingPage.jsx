@@ -24,7 +24,7 @@ const HeroLandingPage = () => {
             {
               style: "outline-primary",
               label: "Start Free Trial",
-              className: "rounded-pill btn-lg text-primary ms-3",
+              className: "rounded-pill btn-lg ms-3",
             },
           ]}
         />
