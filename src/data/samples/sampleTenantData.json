@@ -1,5 +1,6 @@
 [
   {
+    "tenant_id": "T001",
     "tenantName": "John Doe",
     "tenantAddress": "123 Elm St, Springfield, IL, 62701",
     "tenantBalance": 1200.5,
@@ -11,6 +12,7 @@
     "timeSent": "9:53 am"
   },
   {
+    "tenant_id": "T002",
     "tenantName": "Jane Smith",
     "tenantAddress": "456 Oak Ave, Lincoln, NE, 68502",
     "tenantBalance": 800.0,
@@ -22,6 +24,7 @@
     "timeSent": "10/2"
   },
   {
+    "tenant_id": "T003",
     "tenantName": "Alice Johnson",
     "tenantAddress": "789 Pine Rd, Madison, WI, 53703",
     "tenantBalance": 1500.75,
@@ -33,6 +36,7 @@
     "timeSent": "9/12"
   },
   {
+    "tenant_id": "T004",
     "tenantName": "Bob Brown",
     "tenantAddress": "321 Maple St, Columbus, OH, 43215",
     "tenantBalance": 950.25,
@@ -44,6 +48,7 @@
     "timeSent": "9/3"
   },
   {
+    "tenant_id": "T005",
     "tenantName": "Emily Davis",
     "tenantAddress": "654 Cedar Blvd, Atlanta, GA, 30301",
     "tenantBalance": 400.0,

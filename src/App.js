@@ -52,7 +52,6 @@ const App = () => {
           style={{
             display: "flex",
             flexDirection: "column",
-            maxHeight: "100vh",
           }}
         >
           <DashboardHeader />

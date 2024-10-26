@@ -4,11 +4,13 @@ import ListGroup from "../components/ListGroup";
 import ListItem from "../components/ui/ListItem";
 import sampleTenantData from "../data/samples/sampleTenantData.json";
 import { truncateText } from "../utils/truncateText";
+import useWindowSize from "../hooks/useWindowSize";
 
 const MessagesWidget = () => {
   const [messages, setMessages] = useState([]);
   const containerRef = useRef(null);
   const [containerWidth, setContainerWidth] = useState(0);
+  const { height } = useWindowSize();
 
   useEffect(() => {
     // Simulate fetching the calendar data
@@ -37,10 +39,12 @@ const MessagesWidget = () => {
     return names.length > 1 ? names[0][0] + names[1][0] : names[0][0];
   };
 
+  const containerHeight = height * 0.23;
+
   return (
     <Card title={"Messages"} ref={containerRef}>
       {messages.length > 0 ? (
-        <ListGroup mHeight={"22vh"}>
+        <ListGroup mHeight={containerHeight}>
           {messages.map((messageContact, index) => (
             <ListItem
               key={index}

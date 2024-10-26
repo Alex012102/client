@@ -4,6 +4,7 @@ import Card from "../components/Card";
 import ListGroup from "../components/ListGroup";
 import ListItem from "../components/ui/ListItem";
 import parseDate from "../utils/parseDate.js";
+import useWindowSize from "../hooks/useWindowSize.js";
 
 const Calendar = () => {
   const [events, setEvents] = useState([]);
@@ -13,10 +14,13 @@ const Calendar = () => {
     setEvents(sampleCalendarData);
   }, []);
 
+  const { height } = useWindowSize();
+  const containerHeight = height * 0.225;
+
   return (
     <Card title={"Up Coming"}>
       {sampleCalendarData.length > 0 ? (
-        <ListGroup mHeight={'22vh'}>
+        <ListGroup mHeight={containerHeight}>
           {sampleCalendarData.map((event, index) => {
             // Call the parseDate function for each event date
             const dateParsed = parseDate(event.date); // Assuming event has a 'date' field

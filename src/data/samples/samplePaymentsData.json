@@ -1,0 +1,445 @@
+[
+  {
+    "tenant_id": "T001",
+    "property_id": "P001",
+    "payments": [
+      {
+        "paymentId": "P001",
+        "amount": 1200,
+        "paymentType": "Rent",
+        "date": "2023-01-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P002",
+        "amount": 1200,
+        "paymentType": "Rent",
+        "date": "2023-02-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P003",
+        "amount": 1200,
+        "paymentType": "Rent",
+        "date": "2023-03-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P004",
+        "amount": 1200,
+        "paymentType": "Rent",
+        "date": "2023-04-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P005",
+        "amount": 1200,
+        "paymentType": "Rent",
+        "date": "2023-05-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P006",
+        "amount": 1200,
+        "paymentType": "Rent",
+        "date": "2023-06-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P007",
+        "amount": 1200,
+        "paymentType": "Rent",
+        "date": "2023-07-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P008",
+        "amount": 1200,
+        "paymentType": "Rent",
+        "date": "2023-08-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P009",
+        "amount": 1200,
+        "paymentType": "Rent",
+        "date": "2023-09-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P010",
+        "amount": 1200,
+        "paymentType": "Rent",
+        "date": "2023-10-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P011",
+        "amount": 1200,
+        "paymentType": "Rent",
+        "date": "2023-11-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P012",
+        "amount": 1200,
+        "paymentType": "Rent",
+        "date": "2023-12-01",
+        "status": "Completed"
+      }
+    ]
+  },
+  {
+    "tenant_id": "T002",
+    "property_id": "P002",
+    "payments": [
+      {
+        "paymentId": "P013",
+        "amount": 900,
+        "paymentType": "Rent",
+        "date": "2023-01-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P014",
+        "amount": 900,
+        "paymentType": "Rent",
+        "date": "2023-02-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P015",
+        "amount": 900,
+        "paymentType": "Rent",
+        "date": "2023-03-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P016",
+        "amount": 900,
+        "paymentType": "Rent",
+        "date": "2023-04-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P017",
+        "amount": 900,
+        "paymentType": "Rent",
+        "date": "2023-05-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P018",
+        "amount": 900,
+        "paymentType": "Rent",
+        "date": "2023-06-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P019",
+        "amount": 900,
+        "paymentType": "Rent",
+        "date": "2023-07-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P020",
+        "amount": 900,
+        "paymentType": "Rent",
+        "date": "2023-08-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P021",
+        "amount": 900,
+        "paymentType": "Rent",
+        "date": "2023-09-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P022",
+        "amount": 900,
+        "paymentType": "Rent",
+        "date": "2023-10-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P023",
+        "amount": 900,
+        "paymentType": "Rent",
+        "date": "2023-11-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P024",
+        "amount": 100,
+        "paymentType": "Late Fee",
+        "date": "2023-06-01",
+        "status": "Completed"
+      }
+    ]
+  },
+  {
+    "tenant_id": "T003",
+    "property_id": "P003",
+    "payments": [
+      {
+        "paymentId": "P025",
+        "amount": 1500,
+        "paymentType": "Rent",
+        "date": "2023-01-01",
+        "status": "Pending"
+      },
+      {
+        "paymentId": "P026",
+        "amount": 1500,
+        "paymentType": "Rent",
+        "date": "2023-02-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P027",
+        "amount": 1500,
+        "paymentType": "Rent",
+        "date": "2023-03-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P028",
+        "amount": 1500,
+        "paymentType": "Rent",
+        "date": "2023-04-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P029",
+        "amount": 1500,
+        "paymentType": "Rent",
+        "date": "2023-05-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P030",
+        "amount": 1500,
+        "paymentType": "Rent",
+        "date": "2023-06-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P031",
+        "amount": 1500,
+        "paymentType": "Rent",
+        "date": "2023-07-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P032",
+        "amount": 1500,
+        "paymentType": "Rent",
+        "date": "2023-08-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P033",
+        "amount": 1500,
+        "paymentType": "Rent",
+        "date": "2023-09-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P034",
+        "amount": 1500,
+        "paymentType": "Rent",
+        "date": "2023-10-01",
+        "status": "Pending"
+      },
+      {
+        "paymentId": "P035",
+        "amount": 150,
+        "paymentType": "Late Fee",
+        "date": "2023-07-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P036",
+        "amount": 150,
+        "paymentType": "Late Fee",
+        "date": "2023-08-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P037",
+        "amount": 150,
+        "paymentType": "Late Fee",
+        "date": "2023-09-01",
+        "status": "Completed"
+      }
+    ]
+  },
+  {
+    "tenant_id": "T004",
+    "property_id": "P004",
+    "payments": [
+      {
+        "paymentId": "P038",
+        "amount": 700,
+        "paymentType": "Rent",
+        "date": "2023-01-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P039",
+        "amount": 700,
+        "paymentType": "Rent",
+        "date": "2023-02-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P040",
+        "amount": 700,
+        "paymentType": "Rent",
+        "date": "2023-03-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P041",
+        "amount": 700,
+        "paymentType": "Rent",
+        "date": "2023-04-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P042",
+        "amount": 700,
+        "paymentType": "Rent",
+        "date": "2023-05-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P043",
+        "amount": 700,
+        "paymentType": "Rent",
+        "date": "2023-06-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P044",
+        "amount": 700,
+        "paymentType": "Rent",
+        "date": "2023-07-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P045",
+        "amount": 700,
+        "paymentType": "Rent",
+        "date": "2023-08-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P046",
+        "amount": 700,
+        "paymentType": "Rent",
+        "date": "2023-09-01",
+        "status": "Completed"
+      },
+      {
+        "paymentId": "P047",
+        "amount": 700,
+        "paymentType": "Rent",
+        "date": "2023-10-01",
+        "status": "Pending"
+      },
+      {
+        "paymentId": "P048",
+        "amount": 50,
+        "paymentType": "Late Fee",
+        "date": "2023-08-01",
+        "status": "Completed"
+      }
+    ]
+  },
+  {
+    "tenant_id": "T005",
+    "property_id": "P005",
+    "payments": [
+      {
+        "paymentId": "P049",
+        "amount": 1600,
+        "paymentType": "Rent",
+        "date": "2023-01-01",
+        "status": "Pending"
+      },
+      {
+        "paymentId": "P050",
+        "amount": 1600,
+        "paymentType": "Rent",
+        "date": "2023-02-01",
+        "status": "Pending"
+      },
+      {
+        "paymentId": "P051",
+        "amount": 1600,
+        "paymentType": "Rent",
+        "date": "2023-03-01",
+        "status": "Pending"
+      },
+      {
+        "paymentId": "P052",
+        "amount": 1600,
+        "paymentType": "Rent",
+        "date": "2023-04-01",
+        "status": "Pending"
+      },
+      {
+        "paymentId": "P053",
+        "amount": 1600,
+        "paymentType": "Rent",
+        "date": "2023-05-01",
+        "status": "Pending"
+      },
+      {
+        "paymentId": "P054",
+        "amount": 1600,
+        "paymentType": "Rent",
+        "date": "2023-06-01",
+        "status": "Pending"
+      },
+      {
+        "paymentId": "P055",
+        "amount": 1600,
+        "paymentType": "Rent",
+        "date": "2023-07-01",
+        "status": "Pending"
+      },
+      {
+        "paymentId": "P056",
+        "amount": 1600,
+        "paymentType": "Rent",
+        "date": "2023-08-01",
+        "status": "Pending"
+      },
+      {
+        "paymentId": "P057",
+        "amount": 1600,
+        "paymentType": "Rent",
+        "date": "2023-09-01",
+        "status": "Pending"
+      },
+      {
+        "paymentId": "P058",
+        "amount": 1600,
+        "paymentType": "Rent",
+        "date": "2023-10-01",
+        "status": "Pending"
+      },
+      {
+        "paymentId": "P059",
+        "amount": 1600,
+        "paymentType": "Rent",
+        "date": "2023-11-01",
+        "status": "Pending"
+      }
+    ]
+  }
+]

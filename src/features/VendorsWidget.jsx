@@ -3,6 +3,7 @@ import Card from "../components/Card";
 import ListGroup from "../components/ListGroup";
 import sampleVendorsList from "../data/samples/sampleVendorList.json";
 import ListItem from "../components/ui/ListItem";
+import useWindowSize from "../hooks/useWindowSize";
 
 const VendorsWidget = () => {
   const [vendors, setVendors] = useState([]);
@@ -12,9 +13,12 @@ const VendorsWidget = () => {
     setVendors(sampleVendorsList);
   }, []);
 
+  const { height } = useWindowSize();
+  const containerHeight = height * 0.3;
+
   return (
     <Card title={"Vendors"}>
-      <ListGroup mHeight={"29vh"}>
+      <ListGroup mHeight={containerHeight}>
         {vendors.length > 0 ? (
           vendors.map((vendor, index) => (
             <ListItem

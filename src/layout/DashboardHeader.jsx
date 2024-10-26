@@ -1,7 +1,8 @@
 import React from "react";
 import NavLinks from "../components/NavLinks";
 import Button from "../components/ui/Button.jsx";
-import { GearFill } from "react-bootstrap-icons";
+import { Download, GearFill } from "react-bootstrap-icons";
+import DropdownButton from "../components/DropdownButton.jsx";
 
 const DashboardHeader = () => {
   return (
@@ -64,9 +65,26 @@ const DashboardHeader = () => {
               ]}
             />{" "}
           </div>
-          <Button style={"info"} className={"d-flex align-items-center justify-content-center p-2"}>
-            <GearFill color="white" />
-          </Button>
+          <div className="d-flex">
+            <DropdownButton
+              className={"me-2"}
+              btnStyle={"outline-info"}
+              dropdownList={[
+                { label: "Reports", href: "" },
+                { label: "Reports", href: "" },
+                { label: "Reports", href: "" },
+
+              ]}
+            >
+              <Download />
+            </DropdownButton>
+            <Button
+              style={"info"}
+              className={"d-flex align-items-center justify-content-center p-2"}
+            >
+              <GearFill color="white" />
+            </Button>
+          </div>
         </div>
       </nav>
     </header>

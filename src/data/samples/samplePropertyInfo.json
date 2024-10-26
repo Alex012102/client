@@ -1,5 +1,6 @@
 [
   {
+    "property_id": "P001",
     "streetAddress": "123 Elm St",
     "city": "Springfield",
     "state": "IL",
@@ -12,6 +13,7 @@
     "occupied": true
   },
   {
+    "property_id": "P002",
     "streetAddress": "456 Oak Ave",
     "city": "Lincoln",
     "state": "NE",
@@ -24,6 +26,7 @@
     "occupied": true
   },
   {
+    "property_id": "P003",
     "streetAddress": "789 Pine Rd",
     "city": "Madison",
     "state": "WI",
@@ -36,6 +39,7 @@
     "occupied": false
   },
   {
+    "property_id": "P004",
     "streetAddress": "321 Maple St",
     "city": "Columbus",
     "state": "OH",
@@ -48,6 +52,7 @@
     "occupied": true
   },
   {
+    "property_id": "P005",
     "streetAddress": "654 Cedar Blvd",
     "city": "Atlanta",
     "state": "GA",

@@ -4,6 +4,7 @@ import sampleTenantData from "../data/samples/sampleTenantData.json";
 import ListGroup from "../components/ListGroup";
 import parseDate from "../utils/parseDate";
 import formatAmount from "../utils/formatAmount";
+import useWindowSize from "../hooks/useWindowSize";
 
 const PaymentsWidget = () => {
   const [payments, setPayments] = useState(0);
@@ -13,12 +14,15 @@ const PaymentsWidget = () => {
     setPayments(sampleTenantData);
   }, []);
 
+  const { height } = useWindowSize();
+  const containerHeight = height * 0.3;
+
   return (
     <Card title={"Payments"}>
       {payments.length > 0 ? (
-        <ListGroup mHeight={"29vh"}>
+        <ListGroup mHeight={containerHeight}>
           {payments.map((tenant, index) => {
-            const backgroundColor = tenant.amount > 0 ? "#ff0000" : "#67b800";
+            const backgroundColor = tenant.amount > 0 ? "#ff0000" : "#73A942";
 
             const leaseStart = parseDate(tenant.leaseTerm.start);
             const leaseEnd = parseDate(tenant.leaseTerm.end);
