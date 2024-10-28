@@ -21,7 +21,6 @@ const OverviewPage = () => {
   ];
 
   const { height } = useWindowSize();
-  const containerHeight = height * 0.225;
 
   return (
     <>
@@ -43,7 +42,10 @@ const OverviewPage = () => {
           {/* Right Section */}
           <div className="col-md-8 d-flex flex-column ps-md-3">
             {/* Upper Section */}
-            <div className="d-flex flex-nowrap mb-3 gap-3" style={{height: height * 0.376}}>
+            <div
+              className="d-flex flex-nowrap mb-3 gap-3"
+              style={{ height: height * 0.376 }}
+            >
               <ExpensesWidget />
               <PerformanceHistoryWidget />
               <UrgencyWidget />

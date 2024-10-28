@@ -17,6 +17,7 @@
   align-items: center;
 }
 
+/* Properties card */
 .card-hover:hover {
   transform: scale(1.04); /* Slightly increase size on hover */
 }
@@ -25,13 +26,13 @@
   height: 100%;
 }
 
+/* Banner Metrics */
 .metrics {
   color: #ffffff;
   background-color: #408aaa;
 }
 
+/* Vendor Widget */
 .vendor-list-item small {
   color: rgb(var(--bs-primary-rgb)) !important;
 }
-
-

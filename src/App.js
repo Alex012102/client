@@ -1,12 +1,10 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   useLocation,
 } from "react-router-dom";
-
-import { useEffect } from "react";
 
 // styles
 import "./assets/css/custom-bootstrap.min.css";
@@ -16,6 +14,8 @@ import "./assets/css/LandingPage.css";
 import "./assets/css/features.css";
 import "./assets/css/index.css";
 
+// components
+import { PageProvider, PageContext } from "./context/PageContext.js";
 import DashboardHeader from "./layout/DashboardHeader.jsx";
 
 // page routes
@@ -27,7 +27,27 @@ import MaintenancePage from "./pages/MaintenancePage.js";
 import ReceiptsPage from "./pages/ReceiptsPage.js";
 
 const App = () => {
-  const location = useLocation(); // Get the current location
+  const location = useLocation();
+  const { setCurrentPage } = useContext(PageContext);
+
+  useEffect(() => {
+    const pageMap = {
+      "/overview": "overview",
+      "/banking": "banking",
+      "/receipts": "receipts",
+      "/properties": "properties",
+      "/maintenance": "maintenance",
+    };
+
+    const page = pageMap[location.pathname] || "Landing";
+    console.log("Setting current page to:", page);
+
+    try {
+      setCurrentPage(page);
+    } catch (error) {
+      console.error("Error setting current page:", error);
+    }
+  }, [location.pathname, setCurrentPage]);
 
   useEffect(() => {
     if (location.pathname !== "/") {
@@ -35,24 +55,18 @@ const App = () => {
     } else {
       document.body.classList.remove("dashboard-background");
     }
-
-    // Cleanup function to remove the class when unmounting
-    return () => {
-      document.body.classList.remove("dashboard-background");
-    };
+    return () => document.body.classList.remove("dashboard-background");
   }, [location.pathname]);
 
   return (
     <div>
-      {/* Page Content */}
-      {location.pathname !== "/" && ( // Check if the current path is not the landing page
+      {location.pathname === "/" ? (
+        <LandingPage />
+      ) : (
         <div
           className="container-fluid"
           id="dashboard"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-          }}
+          style={{ display: "flex", flexDirection: "column" }}
         >
           <DashboardHeader />
           <Routes>
@@ -64,18 +78,16 @@ const App = () => {
           </Routes>
         </div>
       )}
-      {/* Always render the LandingPage */}
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-      </Routes>
     </div>
   );
 };
 
 const Root = () => (
-  <Router>
-    <App />
-  </Router>
+  <PageProvider>
+    <Router>
+      <App />
+    </Router>
+  </PageProvider>
 );
 
 export default Root;
