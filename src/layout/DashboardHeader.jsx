@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { PageContext } from "../context/PageContext.js";
 import NavLinks from "../components/NavLinks";
 import Button from "../components/ui/Button.jsx";
-import { Download, GearFill } from "react-bootstrap-icons";
+import { Download, GearFill, PlusCircleFill } from "react-bootstrap-icons";
 import DropdownButton from "../components/DropdownButton.jsx";
+import ModalForms from "../components/form/ModalForms.jsx";
 
 const DashboardHeader = () => {
+  const { currentPage, setFormType } = useContext(PageContext);
+  const [showModal, setShowModal] = useState(false);
+
+  const handleButtonClick = () => {
+    setFormType(currentPage);
+    setShowModal(true);
+    console.log(showModal)
+  };
+
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-light">
@@ -66,6 +78,21 @@ const DashboardHeader = () => {
             />{" "}
           </div>
           <div className="d-flex">
+            <Button
+              style="primary"
+              className="d-flex align-items-center justify-content-center p-2 me-2"
+              onClick={handleButtonClick}
+            >
+              <PlusCircleFill color="white" />
+            </Button>
+
+            {/* Modal is rendered separately to ensure it overlays correctly */}
+            {showModal && (
+              <ModalForms
+                isOpen={showModal}
+                onClose={() => setShowModal(false)}
+              />
+            )}
             <DropdownButton
               className={"me-2"}
               btnStyle={"outline-info"}
@@ -73,7 +100,6 @@ const DashboardHeader = () => {
                 { label: "Reports", href: "" },
                 { label: "Reports", href: "" },
                 { label: "Reports", href: "" },
-
               ]}
             >
               <Download />
