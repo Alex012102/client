@@ -16,6 +16,8 @@ const ModalForms = ({ isOpen, onClose }) => {
     }
   };
 
+  const modalTitle = formType.charAt(0).toUpperCase() + formType.slice(1)
+
   return (
     <div
       className={`modal fade ${isOpen ? "show" : ""}`}
@@ -33,7 +35,7 @@ const ModalForms = ({ isOpen, onClose }) => {
       >
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title">Add</h5>
+            <h5 className="modal-title">Add {modalTitle}</h5>
             <button
               type="button"
               className="btn-close"

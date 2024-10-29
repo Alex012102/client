@@ -8,16 +8,16 @@ const PricingLandingPage = () => {
       <h2 className="pb-2 border-bottom">Pricing</h2>
       <div className="row row-cols-1 row-cols-md-3 mb-3 text-center p-3 mx-5">
         <PriceCard
-          label="Free"
-          price="0"
+          label="Entrepreneur"
+          price="10"
           features={["5 Properties", "Eamil Support", "Help Center Access"]}
           button="Sign Up For Free"
           border="border-primary"
           cardHeader="bg-primary text-white"
         />
         <PriceCard
-          label="Entrepreneur"
-          price="15"
+          label="Capitalist"
+          price="30"
           features={[
             "15 Properties",
             "Priority Email Support",
@@ -26,8 +26,8 @@ const PricingLandingPage = () => {
           button="Get Started"
         />
         <PriceCard
-          label="Capitalist"
-          price="30"
+          label="Mogel"
+          price="50"
           features={[
             "15+ Properties",
             "Priority Email Support",
