@@ -1,9 +1,169 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import States from "../../data/stateOptions.json";
 
-const PropertiesForm = () => {
+// MAKE MORE MODULIZED.
+
+const UnitForm = ({ index, unitData, onUnitChange, onPhotoUpload }) => {
   return (
-    <form>
+    <div key={index} className="unit-box mb-3">
+      <h5 className="fw-bold">Unit {index + 1}</h5>
+      <div className="input-group mb-3">
+        <label
+          htmlFor={`unitNumber-${index}`}
+          className="input-group-text justify-content-start"
+          style={{ width: "30%" }}
+        >
+          Unit Number:
+        </label>
+        <input
+          type="text"
+          className="form-control"
+          id={`unitNumber-${index}`}
+          value={unitData.unitNumber || ""}
+          onChange={(e) => onUnitChange(index, "unitNumber", e.target.value)}
+        />
+      </div>
+
+      <div className="input-group mb-3">
+        <label
+          htmlFor={`unitBedrooms-${index}`}
+          className="input-group-text justify-content-start"
+          style={{ width: "30%" }}
+        >
+          Bedrooms:
+        </label>
+        <input
+          type="text"
+          className="form-control"
+          id={`unitBedrooms-${index}`}
+        />
+      </div>
+      <div className="input-group mb-3">
+        <label
+          htmlFor={`unitBathrooms-${index}`}
+          className="input-group-text justify-content-start"
+          style={{ width: "30%" }}
+        >
+          Bathrooms:
+        </label>
+        <input
+          type="text"
+          className="form-control"
+          id={`unitBathrooms-${index}`}
+        />
+      </div>
+      <div className="input-group mb-3">
+        <label
+          htmlFor={`unitSquareFeet-${index}`}
+          className="input-group-text justify-content-start"
+          style={{ width: "30%" }}
+        >
+          Square Feet:
+        </label>
+        <input
+          type="text"
+          className="form-control"
+          id={`unitSquareFeet-${index}`}
+        />
+      </div>
+      <div className="input-group mb-3">
+        <label
+          htmlFor={`unitRent-${index}`}
+          className="input-group-text justify-content-start"
+          style={{ width: "30%" }}
+        >
+          Rent:
+        </label>
+        <input type="text" className="form-control" id={`unitRent-${index}`} />
+      </div>
+      <div className="d-flex align-items-center mb-3">
+        <input
+          className="form-check-input border-2 mt-0"
+          type="checkbox"
+          value=""
+          id={`unitOccupancy-${index}`}
+          aria-label="Checkbox for following text input"
+        />
+        <label
+          htmlFor={`unitOccupancy-${index}`}
+          className="form-label m-0 ms-2"
+        >
+          Leased
+        </label>
+      </div>
+
+      {/* Photo Upload */}
+      <div className="input-group mb-3">
+        <label
+          htmlFor={`unitPhoto-${index}`}
+          className="input-group-text justify-content-start"
+          style={{ width: "30%" }}
+        >
+          Upload Photo:
+        </label>
+        <input
+          type="file"
+          className="form-control"
+          id={`unitPhoto-${index}`}
+          accept="image/*"
+          onChange={(e) => onPhotoUpload(index, e.target.files[0])}
+        />
+      </div>
+      <div className="mb-3">
+        <label htmlFor={`unitDetails-${index}`} className="form-label">
+          Unit Details
+        </label>
+        <textarea
+          className="form-control"
+          id={`unitDetails-${index}`}
+          value={unitData.unitDetails || ""}
+          onChange={(e) => onUnitChange(index, "unitDetails", e.target.value)}
+        />
+      </div>
+    </div>
+  );
+};
+
+const PropertiesForm = () => {
+  const [unitCountValue, setUnitCountValue] = useState(1);
+  const [unitData, setUnitData] = useState([
+    { unitNumber: "", unitDetails: "", photo: null },
+  ]);
+
+  useEffect(() => {
+    setUnitData((prevUnitData) =>
+      Array.from(
+        { length: unitCountValue },
+        (_, i) =>
+          prevUnitData[i] || { unitNumber: "", unitDetails: "", photo: null }
+      )
+    );
+  }, [unitCountValue]);
+
+  const handleUnitChange = (index, field, value) => {
+    setUnitData((prevUnitData) =>
+      prevUnitData.map((unit, i) =>
+        i === index ? { ...unit, [field]: value } : unit
+      )
+    );
+  };
+
+  const handlePhotoUpload = (index, file) => {
+    setUnitData((prevUnitData) =>
+      prevUnitData.map((unit, i) =>
+        i === index ? { ...unit, photo: file } : unit
+      )
+    );
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Unit Data with Photos:", unitData);
+    // Implement the upload logic here (e.g., send to backend server)
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
       <div className="mb-3">
         <label htmlFor="streetAddress" className="form-label">
           Street Address
@@ -25,12 +185,13 @@ const PropertiesForm = () => {
           </label>
           <input type="text" className="form-control" id="city" />
         </div>
+
         <div className="mb-3">
           <label className="form-label" htmlFor="stateSelection">
             State
           </label>
           <select className="form-select" id="stateSelection">
-            <option selected>Choose...</option>
+            <option value="">Choose...</option>
             {States.map((state, index) => (
               <option key={index} value={state.abbreviation}>
                 {state.name}
@@ -38,6 +199,7 @@ const PropertiesForm = () => {
             ))}
           </select>
         </div>
+
         <div className="mb-3" style={{ maxWidth: "20%" }}>
           <label htmlFor="zip-code" className="form-label">
             Zip Code
@@ -45,36 +207,45 @@ const PropertiesForm = () => {
           <input type="text" className="form-control" id="zip-code" />
         </div>
       </div>
-      <div class="input-group mb-3">
-        <label class="input-group-text" for="unitCount">
+
+      {/* Units Dropdown */}
+      <div className="input-group pb-3 mb-3 border-bottom border-3">
+        <label className="input-group-text" htmlFor="unitCount">
           Units:
         </label>
-        <select class="form-select" id="unitCount">
-          <option selected>Choose...</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-          <option value="13">13</option>
-          <option value="14">14</option>
-          <option value="15">15</option>
-          <option value="16">16</option>
-          <option value="17">17</option>
-          <option value="18">18</option>
-          <option value="19">19</option>
-          <option value="20">20</option>
+        <select
+          className="form-select"
+          id="unitCount"
+          value={unitCountValue}
+          onChange={(e) => setUnitCountValue(Number(e.target.value))}
+        >
+          <option value="" disabled>
+            Choose...
+          </option>
+          {[...Array(20)].map((_, i) => (
+            <option key={i} value={i + 1}>
+              {i + 1}
+            </option>
+          ))}
         </select>
       </div>
-      {/* <button type="submit" className="btn btn-primary">
+
+      {/* Unit Details */}
+      <div className="unit-container">
+        {unitData.map((unit, index) => (
+          <UnitForm
+            key={index}
+            index={index}
+            unitData={unit}
+            onUnitChange={handleUnitChange}
+            onPhotoUpload={handlePhotoUpload} // pass handlePhotoUpload as prop
+          />
+        ))}
+      </div>
+
+      <button type="submit" className="btn btn-primary">
         Submit
-      </button> */}
+      </button>
     </form>
   );
 };
