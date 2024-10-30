@@ -1,3 +1,10 @@
+/**
+ * Parses date from database, seperating the elements.
+ * 
+ * @param {string} dateString - The original date.
+ * @returns {object} - Returns object with seperate elements.
+ */
+
 function parseDate(dateString) {
   // Create a new Date object from the input string
   const date = new Date(dateString);

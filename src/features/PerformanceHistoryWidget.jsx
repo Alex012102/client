@@ -36,7 +36,7 @@ const PerformanceHistoryWidget = () => {
     switch (activeTab) {
       case "incomeChart":
         return (
-          <div style={{ height: "100%" }}>
+          <div style={{ width: "100%", height: "100%" }}>
             {chartData.length > 0 ? (
               <CustomLineChart data={chartData} lines={lines} />
             ) : (
@@ -61,6 +61,7 @@ const PerformanceHistoryWidget = () => {
 
   return (
     <TabCard
+      style={{ width: "100%" }}
       tabs={tabs}
       activeTab={activeTab} // Pass the active tab
       onTabChange={setActiveTab} // Pass the function to change the active tab
@@ -71,5 +72,3 @@ const PerformanceHistoryWidget = () => {
 };
 
 export default PerformanceHistoryWidget;
-
-

@@ -1,3 +1,10 @@
+/**
+ * Take a string of text, and turn it to Pascal Case.
+ *
+ * @param {string} str - The original text string.
+ * @returns {string} - The modified text string.
+ */
+
 function toPascalCase(str) {
   // Check if the input is undefined or not a string
   if (typeof str !== "string") {

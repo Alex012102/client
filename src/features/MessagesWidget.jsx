@@ -42,7 +42,7 @@ const MessagesWidget = () => {
   const containerHeight = height * 0.23;
 
   return (
-    <Card title={"Messages"} ref={containerRef}>
+    <Card title={"Messages"} ref={containerRef} titleHref={"/messages"}>
       {messages.length > 0 ? (
         <ListGroup mHeight={containerHeight}>
           {messages.map((messageContact, index) => (

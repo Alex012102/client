@@ -8,7 +8,7 @@ const CustomPieChart = ({
   colors = ["#39a9db", "#F9DC5C", "#73A942", "#ff7433"],
   width = "100%",
   height = "100%",
-  outerRadius = 80,
+  outerRadius = 100,
   dataKey = "value",
 }) => {
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -23,7 +23,11 @@ const CustomPieChart = ({
   };
 
   return (
-    <ResponsiveContainer width="100%" height="100%">
+    <ResponsiveContainer
+      width="100%"
+      height="100%"
+      style={{ maxWidth: "300px" }}
+    >
       <PieChart width={width} height={height}>
         <Tooltip
           formatter={(value, name, props) => [

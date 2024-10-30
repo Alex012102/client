@@ -21,7 +21,7 @@ const ExpensesWidget = () => {
   return (
     <Card title={"Expenses"} id="expensesWidget">
       <div style={{ height: chartHeight }}>
-        <CustomPieChart data={expenseTotals} />
+        <CustomPieChart width={"40%"} data={expenseTotals} />
       </div>
     </Card>
   );

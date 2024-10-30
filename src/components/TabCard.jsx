@@ -2,7 +2,7 @@ import React from "react";
 
 const TabCard = ({ tabs, id, activeTab, onTabChange, children }) => {
   return (
-    <div className="card text-center shadow border-0" id={id}>
+    <div className="card flex-grow-1 text-center shadow border-0" id={id}>
       <div className="card-header">
         <ul className="nav nav-tabs card-header-tabs">
           {tabs.map((tab) => (

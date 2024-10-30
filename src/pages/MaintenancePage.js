@@ -70,7 +70,7 @@ const MaintenancePage = () => {
         subtitle={pageSubtitle}
         cards={cardsData}
       />
-      <div className="container-fluid flex-grow-1 py-4" id="receipts">
+      <div className="container-fluid flex-grow-1 py-4" id="receiptsPage">
         <div className="row row-cols-1 row-cols-md-3 mt-3">
           {/* Display a loading indicator or message while data is being loaded */}
           {loading ? (
